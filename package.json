@@ -1,0 +1,24 @@
+{
+  "name": "esquadro",
+  "version": "1.0.0",
+  "description": "Protractor Helper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassioafs/esquadro.git"
+  },
+  "keywords": [
+    "protractor",
+    "helper",
+    "protractor select",
+    "protractor screenshot"
+  ],
+  "author": "Cássio Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassioafs/esquadro/issues"
+  },
+  "homepage": "https://github.com/cassioafs/esquadro#readme",
+  "peerDependencies": {
+    "protractor": "^5.1.2"
+  }
+}
