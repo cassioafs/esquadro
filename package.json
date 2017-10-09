@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/cassioafs/esquadro#readme",
   "peerDependencies": {
-    "protractor": "^5.1.2"
+    "protractor": "^4.0.0"
   }
 }
