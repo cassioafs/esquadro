@@ -20,7 +20,7 @@ class Select{
     selectByVisibleText(texto) {
       return this.select.all(by.xpath('option[.="' + texto + '"]')).click();   
     }
-    selectOptionByIndex = function  (index) {
+    selectByIndex = function  (index) {
       return this.select.all(by.css('option')).get(index).click();
     };
 }
