@@ -122,9 +122,8 @@ The constructor receives which element to manipulate
 
 This helper has theese methods bellow:
 
-```javascript
-  getOptions()
-```
+* getOptions()
+
 It's return all options in select element
 
 E.g.:
@@ -137,9 +136,8 @@ selectType.getOptions().then(function(options){
 ```
 In this case, it returns text from the first element of the options in a selected element and print this value
 
-```javascript
-  getOptionSelected()
-```
+* getOptionSelected()
+
 It's return the option selected in the select element
 
 E.g.:
@@ -150,9 +148,8 @@ E.g.:
 ```
 In this case, it returns text from the option selected in select element
 
-```javascript
-  selectByValue(value)
-```
+* selectByValue
+
 The above method select the option by value of the select element
 
 E.g.:
@@ -161,9 +158,8 @@ E.g.:
 ```
 In this case, it's select option where your value is equal 'fire'
 
-```javascript
-  selectByVisibleText(value)
-```
+* selectByVisibleText
+
 The above method select the option by visible text of the select element
 
 E.g.:
@@ -172,9 +168,8 @@ E.g.:
 ```
 In this case, it's select option where your text is equal 'FIRE
 
-```javascript
-  selectByIndex(index)
-```
+* selectByIndex
+
 The above method select the option by index in list of options of the select element
 
 E.g.:
