@@ -166,7 +166,7 @@ E.g.:
 ```javascript
   selectType.selectByVisibleText('FIRE');
 ```
-In this case, it's select option where your text is equal 'FIRE
+In this case, it's select option where your text is equal 'FIRE'
 
 * selectByIndex
 
