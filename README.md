@@ -81,3 +81,24 @@ The above method wait drop down list elements load and receive two parameters, t
   page.swicthDriverToOpenTab(urlNewTab)
 ```
 The above method switch webdriver to new open tab and receive the url this new tab
+
+```javascript
+page.returnDriverToMainTab()
+```
+The above method switch webdriver to main tab.
+
+```javascript
+page.scrollPageTo(valuePixels);
+```
+The above method scroll the page to point of page
+
+```javascript
+page.scrollTop();
+```
+The above method scroll to top of page
+
+```javascript
+page.getScreenshot(nomeArquivo, pathScreeShot)
+```
+The above method take a screenshot and save file into especifcated path
+
