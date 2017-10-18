@@ -9,10 +9,11 @@ To install, execute the command:
 ```
  npm install esquadro --save-dev
  ```
-
-First is the page, where are methods to interact with browser.
+*** 
+### PAGE
+First parte is the page, where are methods to interact with browser.
 See examples how to use:
-First, import the module:
+First, import the module in your PageObject :
 
 ```javascript
 const page = require('esquadro/page');
@@ -102,3 +103,82 @@ page.getScreenshot(nomeArquivo, pathScreeShot)
 ```
 The above method take a screenshot and save file into especifcated path
 
+***
+### Select
+The second part is the helper to interact with select elements and choose options.
+
+How to use:
+Firt, import in your PageObject Class the module select:
+
+```javascript
+const Select = require('esquadro/select');
+```
+
+After import, create instance this module:
+```javascript
+const selectType = new Select(element);
+```
+The constructor receives which element to manipulate
+
+This helper has theese methods bellow:
+
+```javascript
+  getOptions()
+```
+It's return all options in select element
+
+E.g.:
+```javascript
+selectType.getOptions().then(function(options){
+  options[1].getText().then(function(value){
+    console.log(value);
+  });
+});
+```
+In this case, it returns text from the first element of the options in a selected element and print this value
+
+```javascript
+  getOptionSelected()
+```
+It's return the option selected in the select element
+
+E.g.:
+```javascript
+  selectType.getOptionSelected().getText().then(function(value) {
+    console.log(value);
+  });
+```
+In this case, it returns text from the option selected in select element
+
+```javascript
+  selectByValue(value)
+```
+The above method select the option by value of the select element
+
+E.g.:
+```javascript
+  selectType.selectByValue('fire');
+```
+In this case, it's select option where your value is equal 'fire'
+
+```javascript
+  selectByVisibleText(value)
+```
+The above method select the option by visible text of the select element
+
+E.g.:
+```javascript
+  selectType.selectByVisibleText('FIRE');
+```
+In this case, it's select option where your text is equal 'FIRE
+
+```javascript
+  selectByIndex(index)
+```
+The above method select the option by index in list of options of the select element
+
+E.g.:
+```javascript
+  selectType.selectByIndex(2);
+```
+In this case, it select option where your index is 2, starting count in 0.

@@ -17,7 +17,7 @@ class Select{
       return this.select.all(by.css('option[value="' + value + '"]')).click();
     }
 
-    selectByVisibleText(texto) {
+    selectByVisibleText(text) {
       return this.select.all(by.xpath('option[.="' + texto + '"]')).click();   
     }
     selectByIndex(index) {
