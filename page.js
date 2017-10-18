@@ -51,7 +51,7 @@ const PATH_DEFAULT_SCREENSHOT = './features/screenshots';
     });
   }
 
-  exports.returnToMainTab = ()=> {
+  exports.returnDriverToMainTab = ()=> {
     browser.getAllWindowHandles().then(function(handles){
         browser.close();
         browser.switchTo().window(handles[0]);
