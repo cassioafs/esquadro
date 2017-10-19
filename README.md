@@ -3,7 +3,9 @@ This library is a Helper of Protractor Tests.
 
 ## Usage 
 ***
-Esquadro is easy to use and is divided into two parts. 
+Esquadro is easy to use and is divided into two parts:
+* Page
+* Select 
 
 To install, execute the command:
 ```
@@ -11,7 +13,7 @@ To install, execute the command:
  ```
 *** 
 ### PAGE
-First parte is the page, where are methods to interact with browser.
+First part is the page, where are methods to interact with browser.
 See examples how to use:
 First, import the module in your PageObject :
 
