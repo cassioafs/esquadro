@@ -43,7 +43,7 @@ const PATH_DEFAULT_SCREENSHOT = './features/screenshots';
     })
   }
 
-  exports.swicthDriverToOpenTab = (urlNewTab)=> {
+  exports.switchDriverToOpenTab = (urlNewTab)=> {
     browser.getAllWindowHandles().then(function(handles){
         browser.switchTo().window(handles[1]).then(function(){
           this.waitAlterUrl(urlNewTab);
@@ -59,19 +59,19 @@ const PATH_DEFAULT_SCREENSHOT = './features/screenshots';
   }
 
   exports.scrollPageTo = (valuePixels)=> {
-    browser.executeScript('window.scrollBy(0,' + valuePixels + ');')
+    browser.executeScript(`window.scrollBy(0, ${valuePixels});`)
   }
   exports.scrollTop = ()=> {
     browser.executeScript('window.scrollTo(0,0);');
   }
 
-  exports.getScreenshot = (nomeArquivo, pathScreeShot = PATH_DEFAULT_SCREENSHOT)=> {
+  exports.getScreenshot = (nomeArquivo, pathScreenShot = PATH_DEFAULT_SCREENSHOT)=> {
     function writeScreenShot (data, filename) {
       var stream = fs.createWriteStream(filename);
         stream.write(Buffer.from(data, 'base64'));
         stream.end();
       }
       return browser.takeScreenshot().then((png) => {
-      writeScreenShot(png, `${pathScreeShot}/${nomeArquivo}.png`);
+      writeScreenShot(png, `${pathScreenShot}/${nomeArquivo}.png`);
     });
   }
