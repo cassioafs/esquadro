@@ -81,7 +81,7 @@ The above method waits for a drop down list of elements to be loaded and receive
 * swicthDriverToOpenTab
 
 ```javascript
-  page.swicthDriverToOpenTab(urlNewTab)
+  page.switchDriverToOpenTab(urlNewTab)
 ```
 The above method switches webdriver to a new opened tab and receives the url for this new tab
 
@@ -91,17 +91,17 @@ page.returnDriverToMainTab()
 The above method switches webdriver to then main tab
 
 ```javascript
-page.scrollPageTo(valuePixels);
+page.scrollPageTo(valuePixels)
 ```
 The above method scrolls the page to a specified position
 
 ```javascript
-page.scrollTop();
+page.scrollTop()
 ```
 The above method scrolls the page to the top
 
 ```javascript
-page.getScreenshot(nomeArquivo, pathScreeShot)
+page.getScreenshot(nomeArquivo, pathScreenShot)
 ```
 The above method takes a screenshot and save the file into a specified path
 

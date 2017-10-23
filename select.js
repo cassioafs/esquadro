@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class Select{
     constructor(select){
@@ -14,12 +14,13 @@ class Select{
     }
 
     selectByValue(value) {
-      return this.select.all(by.css('option[value="' + value + '"]')).click();
+      return this.select.all(by.css(`option[value="${value}'"]`)).click();
     }
 
     selectByVisibleText(text) {
-      return this.select.all(by.xpath('option[.="' + texto + '"]')).click();   
+      return this.select.all(by.xpath(`option[.="${texto}"]`)).click();   
     }
+
     selectByIndex(index) {
       return this.select.all(by.css('option')).get(index).click();
     };
