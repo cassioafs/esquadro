@@ -37,12 +37,6 @@ const PATH_DEFAULT_SCREENSHOT = './features/screenshots';
     browser.wait(EC.urlContains(url), timeout);
   }
 
-  exports.waitForCounter = (elementArrayFinder, expectedCount)=> {
-    return elementArrayFinder.count().then(function (actualCount) {
-      return expectedCount === actualCount
-    })
-  }
-
   exports.switchDriverToOpenTab = (urlNewTab)=> {
     browser.getAllWindowHandles().then(function(handles){
         browser.switchTo().window(handles[1]).then(function(){

@@ -72,12 +72,6 @@ The above method waits until the element is invisible and receives two parameter
 ```
 The above method waits until the browser url is altered and receives two parameters, the first is the url and second is a timeout to wait (optional, default is 5000)
 
-* waitForCounter
-```javascript
-  page.waitForCounter(elementArrayFinder, expectedCount)
-```
-The above method waits for a drop down list of elements to be loaded and receives two parameters, the first is the element and second is a timeout to wait (optional, default is 5000)
-
 * swicthDriverToOpenTab
 
 ```javascript
